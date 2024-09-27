@@ -437,23 +437,42 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 /*-------------------------------------
         7. Explore
 --------------------------------------*/
-.explore{
-    padding:117px 0 95px;
+/* Outer section styling */
+.explore {
+    padding: 117px 0 95px;
     background: #f8fafb;
 }
-.explore-content{margin-top: 78px;}
 
+/* Content inside the explore section */
+.explore-content {
+    margin-top: 78px;
+}
+
+/* Individual explore item with consistent margin */
 .single-explore-item {
+    margin-bottom: 25px; /* Space between items */
+}
+
+/* Styling for each element inside explore item */
+.single-explore-item .element {
     background: #fff;
     border: 1px solid #edeff1;
     border-radius: 3px;
-    margin-bottom: 25px;
-    -webkit-transition: .3s linear; 
-    -moz-transition:.3s linear; 
-    -ms-transition:.3s linear; 
-    -o-transition:.3s linear;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
     transition: .3s linear;
+    
+    
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
 }
+
 .single-explore-img{position:relative;overflow: hidden;}
 .single-explore-img:before {
     position: absolute;

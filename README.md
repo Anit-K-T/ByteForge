@@ -21,7 +21,7 @@ During crises, managing resources like hospital beds, oxygen, and vaccines is a 
  
 
 ## Technologies used
-List out tech stacks you have used
+HTML,CSS,Python,Django
 
 ## Other Links
 Provide any other links ( for eg. Wireframe , UI, Abstract, Presentation )

@@ -100,33 +100,26 @@
 		<section class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
-
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Resource<span>Quest</span></a>
-
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                    <li class=" scroll active"><a href="#home">home</a></li>
-			                    <li class="scroll"><a href="#about">about</a></li>
-			                    <li class="scroll"><a href="#hospitals">hospitals</a></li>
-			                    <li class="scroll"><a href="#production">production</a></li>
-			                    
-			                    <li class="scroll"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
+			    <nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000"> 
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<a class="navbar-brand" href="index.html">Resource<span>Quest</span></a>
+						</div>
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class="scroll active"><a href="#home">home</a></li>
+								<li class="scroll"><a href="#about">about</a></li> <!-- Option 1: Change to #about -->
+								<li class="scroll"><a href="#hospitals">hospitals</a></li>
+								<li class="scroll"><a href="#production">production</a></li>
+								<li class="scroll"><a href="#contact">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!--/nav-->
 			    <!-- End Navigation -->
 			</div><!--/.header-area-->
 		    <div class="clearfix"></div>
@@ -225,64 +218,58 @@
 		  <!--list-topics end-->
 
 		<!--works start -->
-<section id="works" class="works">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <div class="container">
-        <div class="section-header">
-            <h2>About</h2>
-            <p>See how our platform manages healthcare resources, tracks production, and ensures public access easily.</p>
-        </div><!--/.section-header-->
-        <div class="works-content">
-            <div class="row">
-                <!-- Hospital Dashboard -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-how-works">
-                        <div class="single-how-works-icon">
-                            <i class="fas fa-hospital-alt"></i> <!-- Hospital icon -->
-                        </div>
-                        <h2><a href="#">Hospital <span>Dashboard</span></a></h2>
-                        <p>
-                            Monitor and manage hospital resources, patient data, and availability in real-time.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#hospital-dashboard'">
-                            Read more
-                        </button>
-                    </div>
-                </div>
-                <!-- Production Monitoring -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-how-works">
-                        <div class="single-how-works-icon">
-                            <i class="fas fa-industry"></i> <!-- Factory/Production icon -->
-                        </div>
-                        <h2><a href="#">Production <span>Monitoring</span></a></h2>
-                        <p>
-                            Track the production and distribution of essential health supplies in real-time.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#production-monitoring'">
-                            Read more
-                        </button>
-                    </div>
-                </div>
-                <!-- Public Availability Checking -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-how-works">
-                        <div class="single-how-works-icon">
-                            <i class="fas fa-clipboard-check"></i> <!-- Availability check icon -->
-                        </div>
-                        <h2><a href="#">Public <span>Availability Check</span></a></h2>
-                        <p>
-                            Ensure the public has access to critical health resources and information.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#public-availability'">
-                            Read more
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+		<section id="about" class="works"> <!-- Option 1: Change this id to about -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+			<div class="container">
+				<div class="section-header">
+					<h2>About</h2>
+					<p>See how our platform manages healthcare resources, tracks production, and ensures public access easily.</p>
+				</div>
+				<div class="works-content">
+					<div class="row">
+						<!-- Hospital Dashboard -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="fas fa-hospital-alt"></i>
+								</div>
+								<h2><a href="#">Hospital <span>Dashboard</span></a></h2>
+								<p>Monitor and manage hospital resources, patient data, and availability in real-time.</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#hospital-dashboard'">
+									Read more
+								</button>
+							</div>
+						</div>
+						<!-- Production Monitoring -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="fas fa-industry"></i>
+								</div>
+								<h2><a href="#">Production <span>Monitoring</span></a></h2>
+								<p>Track the production and distribution of essential health supplies in real-time.</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#production-monitoring'">
+									Read more
+								</button>
+							</div>
+						</div>
+						<!-- Public Availability Checking -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="fas fa-clipboard-check"></i>
+								</div>
+								<h2><a href="#">Public <span>Availability Check</span></a></h2>
+								<p>Ensure the public has access to critical health resources and information.</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#public-availability'">
+									Read more
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		
 <!--/.works-->
 		<!--works end -->
 
@@ -290,15 +277,15 @@
 		<section id="explore" class="explore">
 			<div class="container">
 				<div class="section-header">
-					<h2>explore</h2>
-					<p>Explore New place, food, culture around the world and many more</p>
+					<h2>Hospitals</h2>
+					<p>Efficiently managing and monitoring critical health resources to ensure timely care during health crises.</p>
 				</div><!--/.section-header-->
 				<div class="explore-content">
 					<div class="row">
 						<div class=" col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e1.jpg" alt="explore image">
+									<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\raja.jpg" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -318,29 +305,28 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-1">
-									<h2><a href="#">tommy helfinger bar</a></h2>
+									<h2><a href="https://www.rajagirihospital.com">Rajagiri Hospital</a></h2>
 									<p class="explore-rating-price">
 										<span class="explore-rating">5.0</span>
 										<a href="#"> 10 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">5$-300$</span>
-										</span>
-										 <a href="#">resturent</a>
+										
 									</p>
 									<div class="explore-person">
 										<div class="row">
 											<div class="col-sm-2">
 												<div class="explore-person-img">
 													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
+														<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\hos.png" alt="explore person">
 													</a>
 												</div>
 											</div>
 											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
+												<ul> 
+													<li>Hospital Beds</li>
+													<li>Ambulance</li>
+													<li>Vaccines</li>
+													<li>Medicines</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -364,7 +350,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e2.jpg" alt="explore image">
+									<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\amala.jpeg" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">featured</button>
 										<div class="single-explore-image-icon-box">
@@ -384,29 +370,27 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-2">
-									<h2><a href="#">swim and dine resort</a></h2>
+									<h2><a href="https://www.amalaims.org/hospital">Amala Hospital Thrissur</a></h2>
 									<p class="explore-rating-price">
 										<span class="explore-rating">4.5</span>
 										<a href="#"> 8 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">50$-500$</span>
-										</span>
-										 <a href="#">hotel</a>
 									</p>
 									<div class="explore-person">
 										<div class="row">
 											<div class="col-sm-2">
 												<div class="explore-person-img">
 													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
+														<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\hos.png" alt="explore person">
 													</a>
 												</div>
 											</div>
 											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
+												<ul> 
+													<li>Hospital Beds</li>
+													<li>Ambulance</li>
+													<li>Vaccines</li>
+													<li>Medicines</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -430,7 +414,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e3.jpg" alt="explore image">
+									<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\jub.jpeg" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -450,29 +434,28 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-3">
-									<h2><a href="#">europe tour</a></h2>
+									<h2><a href="https://jmmcri.org/">Jubilee Mission Hospital Thrissur</a></h2>
 									<p class="explore-rating-price">
 										<span class="explore-rating">5.0</span>
 										<a href="#"> 15 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">5k$-10k$</span>
-										</span>
-										 <a href="#">destination</a>
+										
 									</p>
 									<div class="explore-person">
 										<div class="row">
 											<div class="col-sm-2">
 												<div class="explore-person-img">
 													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
+														<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\hos.png" alt="explore person">
 													</a>
 												</div>
 											</div>
 											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
+												<ul> 
+													<li>Hospital Beds</li>
+													<li>Ambulance</li>
+													<li>Vaccines</li>
+													<li>Medicines</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -496,7 +479,7 @@
 						<div class=" col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e4.jpg" alt="explore image">
+									<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\mims.jpeg" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">most view</button>
 										<div class="single-explore-image-icon-box">
@@ -516,36 +499,35 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-4">
-									<h2><a href="#">banglow with swiming pool</a></h2>
+									<h2><a href="https://www.asterhospitals.in/hospitals/aster-mims-calicut">MIMS Calicut</a></h2>
 									<p class="explore-rating-price">
 										<span class="explore-rating">5.0</span>
 										<a href="#"> 10 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">10k$-15k$</span>
-										</span>
-										 <a href="#">real estate</a>
+						
 									</p>
 									<div class="explore-person">
 										<div class="row">
 											<div class="col-sm-2">
 												<div class="explore-person-img">
 													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
+														<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\hos.png" alt="explore person">
 													</a>
 												</div>
 											</div>
 											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
+												<ul> 
+													<li>Hospital Beds</li>
+													<li>Ambulance</li>
+													<li>Vaccines</li>
+													<li>Medicines</li>
+												</ul>
 											</div>
 										</div>
 									</div>
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
+												<button class="close-btn" onclick="window.location.href='#'">open now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -562,7 +544,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e5.jpg" alt="explore image">
+									<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\aster.jpeg" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">featured</button>
 										<div class="single-explore-image-icon-box">
@@ -582,29 +564,28 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-2">
-									<h2><a href="#">vintage car expo</a></h2>
+									<h2><a href="https://www.asterhospitals.in/hospitals/aster-medcity-kochi">Aster Medicity Kochi</a></h2>
 									<p class="explore-rating-price">
 										<span class="explore-rating">4.2</span>
 										<a href="#"> 8 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">500$-1200$</span>
-										</span>
-										 <a href="#">automotion</a>
+								
 									</p>
 									<div class="explore-person">
 										<div class="row">
 											<div class="col-sm-2">
 												<div class="explore-person-img">
 													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
+														<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\hos.png" alt="explore person">
 													</a>
 												</div>
 											</div>
 											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
+												<ul> 
+													<li>Hospital Beds</li>
+													<li>Ambulance</li>
+													<li>Vaccines</li>
+													<li>Medicines</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -628,7 +609,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e6.jpg" alt="explore image">
+									<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\amrita.jpeg" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -648,29 +629,27 @@
 									</div>
 								</div>
 								<div class="single-explore-txt bg-theme-5">
-									<h2><a href="#">thailand tour</a></h2>
+									<h2><a href="https://www.amritahospitals.org/kochi">Amrita Hospital Kochi</a></h2>
 									<p class="explore-rating-price">
 										<span class="explore-rating">5.0</span>
 										<a href="#"> 15 ratings</a> 
-										<span class="explore-price-box">
-											form
-											<span class="explore-price">5k$-10k$</span>
-										</span>
-										 <a href="#">destination</a>
 									</p>
 									<div class="explore-person">
 										<div class="row">
 											<div class="col-sm-2">
 												<div class="explore-person-img">
 													<a href="#">
-														<img src="assets/images/explore/person.png" alt="explore person">
+														<img src="C:\Users\91984\Desktop\byteforge\ByteForge\ResQ\ResQ\assets\images\explore\hos.png" alt="explore person">
 													</a>
 												</div>
 											</div>
 											<div class="col-sm-10">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua.... 
-												</p>
+												<ul> 
+													<li>Hospital Beds</li>
+													<li>Ambulance</li>
+													<li>Vaccines</li>
+													<li>Medicines</li>
+												</ul>
 											</div>
 										</div>
 									</div>

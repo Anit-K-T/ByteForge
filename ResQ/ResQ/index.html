@@ -100,33 +100,26 @@
 		<section class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
-
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Resource<span>Quest</span></a>
-
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                    <li class=" scroll active"><a href="#home">home</a></li>
-			                    <li class="scroll"><a href="#about">about</a></li>
-			                    <li class="scroll"><a href="#hospitals">hospitals</a></li>
-			                    <li class="scroll"><a href="#production">production</a></li>
-			                    
-			                    <li class="scroll"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
+			    <nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000"> 
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<a class="navbar-brand" href="index.html">Resource<span>Quest</span></a>
+						</div>
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class="scroll active"><a href="#home">home</a></li>
+								<li class="scroll"><a href="#about">about</a></li> <!-- Option 1: Change to #about -->
+								<li class="scroll"><a href="#hospitals">hospitals</a></li>
+								<li class="scroll"><a href="#production">production</a></li>
+								<li class="scroll"><a href="#contact">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!--/nav-->
 			    <!-- End Navigation -->
 			</div><!--/.header-area-->
 		    <div class="clearfix"></div>
@@ -225,64 +218,58 @@
 		  <!--list-topics end-->
 
 		<!--works start -->
-<section id="works" class="works">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <div class="container">
-        <div class="section-header">
-            <h2>About</h2>
-            <p>See how our platform manages healthcare resources, tracks production, and ensures public access easily.</p>
-        </div><!--/.section-header-->
-        <div class="works-content">
-            <div class="row">
-                <!-- Hospital Dashboard -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-how-works">
-                        <div class="single-how-works-icon">
-                            <i class="fas fa-hospital-alt"></i> <!-- Hospital icon -->
-                        </div>
-                        <h2><a href="#">Hospital <span>Dashboard</span></a></h2>
-                        <p>
-                            Monitor and manage hospital resources, patient data, and availability in real-time.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#hospital-dashboard'">
-                            Read more
-                        </button>
-                    </div>
-                </div>
-                <!-- Production Monitoring -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-how-works">
-                        <div class="single-how-works-icon">
-                            <i class="fas fa-industry"></i> <!-- Factory/Production icon -->
-                        </div>
-                        <h2><a href="#">Production <span>Monitoring</span></a></h2>
-                        <p>
-                            Track the production and distribution of essential health supplies in real-time.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#production-monitoring'">
-                            Read more
-                        </button>
-                    </div>
-                </div>
-                <!-- Public Availability Checking -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-how-works">
-                        <div class="single-how-works-icon">
-                            <i class="fas fa-clipboard-check"></i> <!-- Availability check icon -->
-                        </div>
-                        <h2><a href="#">Public <span>Availability Check</span></a></h2>
-                        <p>
-                            Ensure the public has access to critical health resources and information.
-                        </p>
-                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#public-availability'">
-                            Read more
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+		<section id="about" class="works"> <!-- Option 1: Change this id to about -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+			<div class="container">
+				<div class="section-header">
+					<h2>About</h2>
+					<p>See how our platform manages healthcare resources, tracks production, and ensures public access easily.</p>
+				</div>
+				<div class="works-content">
+					<div class="row">
+						<!-- Hospital Dashboard -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="fas fa-hospital-alt"></i>
+								</div>
+								<h2><a href="#">Hospital <span>Dashboard</span></a></h2>
+								<p>Monitor and manage hospital resources, patient data, and availability in real-time.</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#hospital-dashboard'">
+									Read more
+								</button>
+							</div>
+						</div>
+						<!-- Production Monitoring -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="fas fa-industry"></i>
+								</div>
+								<h2><a href="#">Production <span>Monitoring</span></a></h2>
+								<p>Track the production and distribution of essential health supplies in real-time.</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#production-monitoring'">
+									Read more
+								</button>
+							</div>
+						</div>
+						<!-- Public Availability Checking -->
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="fas fa-clipboard-check"></i>
+								</div>
+								<h2><a href="#">Public <span>Availability Check</span></a></h2>
+								<p>Ensure the public has access to critical health resources and information.</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#public-availability'">
+									Read more
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		
 <!--/.works-->
 		<!--works end -->
 

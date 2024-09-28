@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <style>
+        /* Global Styles */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color: #a09e9c;
+            text-transform: initial;
+            max-width: 1920px;
+            margin: 0 auto;
+            overflow-x: hidden;
+            background-color: #f8f9fa; /* Light background for better contrast */
+        }
+
+        a, a:hover, a:active, a:focus {
+            display: inline-block;
+            text-decoration: none;
+            color: #343a3f;
+            font-size: 16px;
+            padding: 0;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            color: #343a3f;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            font-size: 28px; /* Increase font size for main heading */
+            margin-bottom: 20px; /* Space below the main heading */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Merge borders of the table */
+            margin-bottom: 40px; /* Space below tables */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        table th, table td {
+            padding: 12px 15px; /* Padding for table cells */
+            border: 1px solid #dee2e6; /* Light gray border for table */
+            text-align: left; /* Left-align text */
+        }
+
+        table th {
+            background-color: #343a3f; /* Dark background for header */
+            color: #ffffff; /* White text color for header */
+            font-weight: bold; /* Bold header text */
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray background for even rows */
+        }
+
+        table tr:hover {
+            background-color: #e9ecef; /* Light hover effect for rows */
+        }
+
+        button {
+            background-color: #007bff; /* Blue button color */
+            color: white; /* White text color */
+            padding: 10px 15px; /* Button padding */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        a {
+            margin-top: 20px; /* Space above the link */
+            display: inline-block; /* Inline block for spacing */
+            color: #007bff; /* Blue color for links */
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Additional Styles */
+        html, body {
+            height: 100%;
+        }
+
+        [placeholder]:focus::-webkit-input-placeholder {
+            -webkit-transition: opacity 0.3s 0.3s ease;
+            -moz-transition: opacity 0.3s 0.3s ease;
+            -ms-transition: opacity 0.3s 0.3s ease;
+            -o-transition: opacity 0.3s 0.3s ease;
+            transition: opacity 0.3s 0.3s ease;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hospital Dashboard</h1>
+
+    <h2>Hospitals</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Resources Available</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hospital in hospitals %}
+            <tr>
+                <td>{{ hospital.name }}</td>
+                <td>{{ hospital.resources_available }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No hospitals found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Product Suppliers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Products</th>
+                <th>Resource Name</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for supplier in suppliers %}
+            <tr>
+                <td>{{ supplier.name }}</td>
+                <td>{{ supplier.products }}</td>
+                <td>{{ supplier.resource_name }}</td>
+                <td>{{ supplier.count }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No suppliers found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'index' %}">Go back to Index</a>
+</body>
+</html>

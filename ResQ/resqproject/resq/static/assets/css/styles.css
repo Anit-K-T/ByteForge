@@ -1,0 +1,62 @@
+/* Dashboard Specific Styles */
+body {
+    background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+h1 {
+    font-size: 28px; /* Increase font size for main heading */
+    margin-bottom: 20px; /* Space below the main heading */
+    color: #343a3f; /* Consistent color with your existing styles */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders of the table */
+    margin-bottom: 40px; /* Space below tables */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+table th, table td {
+    padding: 12px 15px; /* Padding for table cells */
+    border: 1px solid #dee2e6; /* Light gray border for table */
+    text-align: left; /* Left-align text */
+}
+
+table th {
+    background-color: #343a3f; /* Dark background for header */
+    color: #ffffff; /* White text color for header */
+    font-weight: bold; /* Bold header text */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+table tr:hover {
+    background-color: #e9ecef; /* Light hover effect for rows */
+}
+
+button {
+    background-color: #007bff; /* Blue button color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+a {
+    margin-top: 20px; /* Space above the link */
+    display: inline-block; /* Inline block for spacing */
+    color: #007bff; /* Blue color for links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

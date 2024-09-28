@@ -121,7 +121,7 @@ html,body{height: 100%;}
 /*-------------------------------------
         2. Header-top
 --------------------------------------*/
-.header-top{border-bottom:1px solid #f6f8fa;}
+.header-top{border-bottom:1px solid #e50973;}
 
 .header-top ul li {display: inline-block;}
 
@@ -130,11 +130,11 @@ html,body{height: 100%;}
 /*.select-opt*/
 .select-opt,.header-top-contact{
     padding: 10px 18px;
-    border-right: 1px solid #f6f8fa;
+    border-right: 1px solid #1b5fa4;
 }
 .header-top-contact{
     border-right: 0;
-    border-left: 1px solid #f6f8fa;
+    border-left: 1px solid #1668bb;
     font-size: 12px;
 }
 .select-opt select {
@@ -243,7 +243,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../images/welcome-hero/banner.jpg)no-repeat;
+    background:url("images.app.goo.gl/iporEt8bAtcY8cnQ6")no-repeat;
     background-position:center;
     background-size:cover;
     text-align: center;
@@ -257,7 +257,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgba(65,73,89,.65);
+    background:rgb(27, 14, 142);
     z-index: -1;
 }
 .welcome-hero-txt { padding-top: 155px;}
@@ -510,6 +510,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
         7. Explore
 --------------------------------------*/
 /* Outer section styling */
+/* Main container for explore section */
 .explore {
     padding: 117px 0 95px;
     background: #f8fafb;
@@ -517,35 +518,43 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 
 /* Content inside the explore section */
 .explore-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with min 300px per item */
+    gap: 25px; /* Space between the grid items */
     margin-top: 78px;
 }
 
 /* Individual explore item with consistent margin */
 .single-explore-item {
-    margin-bottom: 25px; /* Space between items */
-}
-
-/* Styling for each element inside explore item */
-.single-explore-item .element {
     background: #fff;
     border: 1px solid #edeff1;
     border-radius: 3px;
     padding: 15px;
+    transition: box-shadow .3s linear;
     box-sizing: border-box;
-    text-align: center;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
-    
-    
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    position: relative;
 }
 
-.single-explore-img{position:relative;overflow: hidden;}
+.single-explore-item:hover {
+    box-shadow: 0 10px 20px rgba(21, 19, 19, .2); /* Shadow on hover */
+}
+
+/* Styling for each element inside explore item */
+.single-explore-item .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 3px;
+    transition: .3s linear;
+}
+
+/* Image container with overlay effect */
+.single-explore-img {
+    position: relative;
+    overflow: hidden;
+}
+
 .single-explore-img:before {
     position: absolute;
     content: "";
@@ -553,27 +562,26 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(162,172,177,.2);
+    background: rgba(162, 172, 177, .2);
 }
+
 .single-explore-img-info {
     position: absolute;
-    bottom:-20px;
+    bottom: -20px;
     left: 0;
     width: 100%;
-    opacity:0;
-    visibility:hidden;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
+    opacity: 0;
+    visibility: hidden;
     transition: .3s linear;
 }
-.single-explore-item:hover .single-explore-img-info{
-    opacity:1;
-    visibility:visible;
-    bottom:0px
+
+.single-explore-item:hover .single-explore-img-info {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
 }
-.single-explore-img-info button{
+
+.single-explore-img-info button {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -583,45 +591,54 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     background: #ff545a;
     border-radius: 3px;
     color: #fcfcfc;
-    text-transform: capitalize;
     text-align: center;
     font-size: 12px;
+    text-transform: capitalize;
 }
+
+/* Image icon box */
 .single-explore-image-icon-box {
     text-align: right;
     position: absolute;
     bottom: 10px;
-    right:  10px;
+    right: 10px;
 }
-.single-explore-image-icon-box ul li {
-    display:  inline-block;
-    width: 30px;
-    height:  28px;
-    line-height:  28px;
-    background: #252d32;
-    text-align:  center;
-    margin-left:  5px;
-    color:  #cbcccd;
-}
-.single-explore-image-icon-box ul li:hover i{color: #267dff;}
 
+.single-explore-image-icon-box ul li {
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    line-height: 28px;
+    background: #252d32;
+    color: #cbcccd;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.single-explore-image-icon-box ul li:hover i {
+    color: #267dff;
+}
+
+/* Text and rating part */
 .single-explore-txt {
     padding: 26px 25px 24px 15px;
 }
-.single-explore-txt.bg-theme-1 .explore-rating{background: #70a9ff;}
-.single-explore-txt.bg-theme-2 .explore-rating{background: #00c61c;}
-.single-explore-txt.bg-theme-3 .explore-rating{background: #ffcc5d;}
-.single-explore-txt.bg-theme-4 .explore-rating{background: #bd70ff;}
-.single-explore-txt.bg-theme-5 .explore-rating{background: #ff7a40;}
 
-.explore-rating-price,.explore-rating-price a {
+.single-explore-txt.bg-theme-1 .explore-rating {
+    background: #70a9ff;
+}
+
+.single-explore-txt.bg-theme-2 .explore-rating {
+    background: #00c61c;
+}
+
+/* Rating price */
+.explore-rating-price, .explore-rating-price a {
     font-size: 12px;
     color: #777f85;
-    text-transform: capitalize;
-    font-weight: 400;
     margin: 15px 0 20px;
 }
-.explore-rating-price a {margin:0;}
+
 .explore-rating {
     display: inline-block;
     width: 32px;
@@ -633,7 +650,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-weight: 500;
     margin-right: 10px;
 }
-.explore-price {color: #f63138;}
+
+/* Price part */
+.explore-price {
+    color: #f63138;
+}
+
 .explore-price-box {
     display: inline-block;
     padding: 0 10px;
@@ -641,34 +663,43 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     border-left: 1px solid #dde0e4;
     border-right: 1px solid #dde0e4;
 }
+
+/* Person image and text */
 .explore-person {
     padding-bottom: 28px;
     border-bottom: 1px solid #e1e5eb;
 }
-.explore-person-img{
+
+.explore-person-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.explore-person p {font-size: 12px;}
-.explore-open-close-part {
-    margin-top: 20px;
+
+.explore-person p {
+    font-size: 12px;
 }
-.close-btn {
-    color: #f63138;
-    text-transform: capitalize;
+
+/* Map icon and closing button */
+.explore-map-icon {
+    text-align: right;
 }
-.close-btn.open-btn {color: #00c437;}
-.explore-map-icon{text-align: right;}
+
 .explore-map-icon a svg {
     width: 12px;
     height: 14px;
     margin-left: 23px;
     color: #767f86;
 }
-.explore-map-icon a svg:hover{color: #f63138;}
-.single-explore-txt.bg-theme-2 .explore-map-icon a svg:hover{color: #00c437;}
-.single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
+
+.explore-map-icon a svg:hover {
+    color: #f63138;
+}
+
+.single-explore-txt.bg-theme-2 .explore-map-icon a svg:hover {
+    color: #00c437;
+}
+
 
 /*-------------------------------------
         8. Reviews
